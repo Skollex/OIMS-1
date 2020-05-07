@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="description" content="OIMS - Online Inventar Management System">
+      <!-- SITE TITLE -->
+      <title>OIMS - Online Inventar Management System</title>
+      <!-- STYLESHEETS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <!-- FAVICON  -->
+      <link rel="icon" href="img/favicon.ico">
+   </head>
+
+<body>
+  
+<!-- MAIN NAV -->
+<nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header page-scroll">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+         <!-- MAIN NAV LOGO -->
+         <a class="logo page-scroll" href="#header"> <img src="img/logo.png" class="img-responsive" alt=""> </a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-menu">
+
+         <!-- MAIN NAV LINKS -->
+         <ul class="nav navbar-nav navbar-right">
+            <li> <a class="page-scroll" href="#infos">Infos</a> </li>
+            <li> <a class="page-scroll" href="#inventar">Inventar</a> </li>
+            <li> <a class="page-scroll" href="#itlager">ITLager</a> </li>
+            <li> <a class="page-scroll" href="#abteilungen">Abteilungen</a> </li>            
+            <li> <a class="page-scroll" href="#benutzer">Benutzer</a> </li>
+            <li> <a class="page-scroll" href="#suche">Suche</a> </li>
+            
+            <li> <a href="#MeinInventarDialog" data-toggle="modal" style="background-color: #00786c">Ausloggen</a> </li>
+         </ul>
+         <!-- END MAIN NAV LINKS -->
+      </div>
+   </div>
+</nav>
+<!-- END MAIN NAV -->
+
+ <!-- Redirect to Dashboard -->
+ <form id="toDashboard" action="/dashboard/" method="post">
+ <input type="hidden" id="RedirectToId" name="id" value="">
+ </form>
+</div>
+<!-- Modal HTML -->
+<!-- HEADER -->
+<header id="header">
+   
+    <div class="intro-text"></div>
+   
+   </header>
+<!-- END HEADER -->
+
+<section id="infos">
+   
+   <h1>Info Admintool</h1>
+   <h2>Name:</h2>
+   <h2>Abteilung:</h2>
+   <h2>E-Mail:</h2>
+  
+
+</section>
+<section id=inventar>
+   <button style="background-color: #00786c" type="button" class="btn btn-primary btn-lg btn-block">Mein Inventar</button>
+
+</section>
+
+<section id="itLager">
+
+   <button style="background-color: #00786c" type="button" class="btn btn-primary btn-lg btn-block">IT-Lager</button>
+
+</section>
+
+
+<section id="abteilungen">
+   
+   <button style="background-color: #00786c" type="button" class="btn btn-primary btn-lg btn-block" >Abteilungsliste</button>
+
+</section>
+<section id='benutzer'>
+
+   <button style="background-color: #00786c" type="button" class="btn btn-primary btn-lg btn-block" >Benutzerliste</button>
+
+</section>
+<section id='suche'>
+
+   <button style="background-color: #00786c" type="button" class="btn btn-primary btn-lg btn-block" >Suche</button>
+
+</section>
+
+</html>

@@ -2287,3 +2287,41 @@ header .header-dashboard .dashboard {
   display: inline-block;
   margin: 100px auto;
 }
+#infos
+{
+  margin-left: 400px;
+  margin-top: auto;
+  
+}
+#inventar
+{
+  margin-left: 400px;
+  margin-right: 400px;
+}
+#abteilungen
+{
+  margin-left: 400px;
+  margin-right: 400px;
+
+}
+#itLager
+{
+  margin-left: 400px;
+  margin-right: 400px;
+
+}
+#benutzer
+{
+  margin-left: 400px;
+  margin-right: 400px;
+}
+#suche
+{
+  margin-left: 400px;
+  margin-right: 400px;
+}
+#freilager
+{
+  margin-left: 400px;
+  margin-right: 400px;
+}
