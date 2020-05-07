@@ -254,57 +254,13 @@ include_once('functions.php');
             <div class="row outer-margin">
                <!-- PRICING TABLE 1 -->
                <div class="col-md-4">
-                  <div class="row pricing-title">BASIC</div>
+                  <div class="row pricing-title">STANDARD</div>
                   <div class="row pricing">
                      <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="row">
                            <span class="pricing-price">
                            <span class="currency">€</span>999 </span> <span class="pricing-time">/Mo</span>
-                           <div class="billing-time">jährlich abgerechnet</div>
-                        </div>
-                     </div>
-                     <div class="pricing-row"> <span class="pricing-value">
-                        <span class="pricing-option">
-                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
-                        </span> </span>
-                     </div>
-                     <div class="pricing-row"> <span class="pricing-value">
-                        <span class="pricing-option">
-                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
-                        </span> </span>
-                     </div>
-                     <div class="pricing-row"> <span class="pricing-value">
-                        <span class="pricing-option">
-                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
-                        </span> </span>
-                     </div>
-                     <div class="pricing-row"> <span class="pricing-value">
-                        <span class="pricing-option">
-                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
-                        </span> </span>
-                     </div>
-                     <div class="pricing-row"> <span class="pricing-value">
-                        <span class="pricing-option">
-                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
-                        </span> </span>
-                     </div>
-                     <div class="pricing-row"> <span class="pricing-value">
-                        <span class="pricing-option">
-                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
-                        </span> </span>
-                     </div>
-                     <div class="pricing-row button-container"></div>
-                  </div>
-               </div>
-               <!-- PRICING TABLE 2 -->
-               <div class="col-md-4">
-                  <div class="row pricing-title">STANDARD</div>
-                  <div class="row pricing active">
-                     <div class="col-lg-3 col-md-3 col-sm-3">
-                        <div class="row">
-                           <span class="pricing-price">
-                           <span class="currency">€</span>999 </span> <span class="pricing-time">/Mo</span>
-                           <div class="billing-time">jährlich abgerechnet</div>
+                           <div class="billing-time">für einen Benutzer</div>
                         </div>
                      </div>
                      <div class="pricing-row selected"> <span class="pricing-value">
@@ -337,7 +293,52 @@ include_once('functions.php');
                         <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
                         </span> </span>
                      </div>
-                     <div class="pricing-row button-container"></div>
+                     <div class="pricing-row button-container"><a href="/dashboard/register.php?plan=standart" class="secondary-button secondary-button-inverse">JETZT LOSLEGEN</a></div>
+                  </div>
+               </div>
+               <!-- PRICING TABLE 2 -->
+			   <div class="col-md-4">
+                  <div class="row pricing-title">Trial</div>
+                  <div class="row pricing active">
+                     <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="row">
+                           <span class="pricing-price">Kostenlos</span>
+                           <div class="billing-time">30 Tage testen</div>
+                        </div>
+                     </div>
+                     <div class="pricing-row"> <span class="pricing-value">
+                        <span class="pricing-option">
+                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
+                        </span> </span>
+                     </div>
+                     <div class="pricing-row"> <span class="pricing-value">
+                        <span class="pricing-option">
+                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
+                        </span> </span>
+                     </div>
+                     <div class="pricing-row"> <span class="pricing-value">
+                        <span class="pricing-option">
+                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
+                        </span> </span>
+                     </div>
+                     <div class="pricing-row"> <span class="pricing-value">
+                        <span class="pricing-option">
+                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
+                        </span> </span>
+                     </div>
+                     <div class="pricing-row"> <span class="pricing-value">
+                        <span class="pricing-option">
+                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
+                        </span> </span>
+                     </div>
+                     <div class="pricing-row"> <span class="pricing-value">
+                        <span class="pricing-option">
+                        <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
+                        </span> </span>
+                     </div>
+                     <div class="pricing-row button-container">
+						<a href="/dashboard/register.php?plan=trial" class="secondary-button secondary-button">JETZT LOSLEGEN</a>
+					</div>
                   </div>
                </div>
                <!-- PRICING TABLE 3 -->
@@ -348,7 +349,7 @@ include_once('functions.php');
                         <div class="row">
                            <span class="pricing-price">
                            <span class="currency">€</span>999 </span> <span class="pricing-time">/Mo</span>
-                           <div class="billing-time">jährlich abgerechnet</div>
+                           <div class="billing-time">für einen Benutzer</div>
                         </div>
                      </div>
                      <div class="pricing-row selected"> <span class="pricing-value">
@@ -381,7 +382,7 @@ include_once('functions.php');
                         <i class="fa fa-check"></i>Lorem ipsum dolor sit amet
                         </span> </span>
                      </div>
-                     <div class="pricing-row button-container"></div>
+                     <div class="pricing-row button-container"><a href="/dashboard/register.php?plan=premium" class="secondary-button secondary-button-inverse">JETZT LOSLEGEN</a></div>
                   </div>
                </div>
             </div>
@@ -698,5 +699,6 @@ include_once('functions.php');
 			});
 		});
 	</script>
+ <?php if (isset($_GET['anmelden'])) { echo "<script>$('#MeinInventarDialog').modal('show');</script>"; }?>
    </body>
 </html>
